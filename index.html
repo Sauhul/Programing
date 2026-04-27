@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Esta línea es clave para que el diseño responsivo funcione en celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitar Hero's</title>
+
+    <!-- Vinculamos nuestro archivo de estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== HEADER ===================== -->
+    <!-- Contiene el logo y la navegación principal -->
+    <header class="header">
+      <div class="header-inner">
+        <!-- Logo del festival -->
+        <div class="logo">
+          <span class="logo-main">Guitar🎸</span>
+          <span class="logo-sub">HERO'S</span>
+        </div>
+
+        <!-- Botón hamburguesa: solo se ve en móvil -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navegación -->
+        <nav class="nav" id="nav">
+          <a href="#eventos">Concert Dates</a>
+          <a href="#chefs">The Band</a>
+          <a href="#about">About The Band</a>
+          <a href="#contacto">Watch The Band</a>
+        </nav>
+      </div>
+    </header>
+    <!-- ===================== FIN HEADER ===================== -->
+
+    <!-- ===================== MAIN ===================== -->
+    <main>
+      <!-- ── SECCIÓN HERO (Principal) ── -->
+      <!-- Sección de impacto visual con llamado a la acción -->
+      <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          
+          <h1 class="hero-title">Guitar<br /><em>Hero's</em></h1>
+          <p class="hero-subtitle">Echoes from the Underground</p>
+          <a href="#eventos" class="btn-primary">Give your ticket</a>
+        </div>
+      </section>
+
+      <!-- ── SECCIÓN HORARIOS / EVENTOS ── -->
+      <!-- Lista de catas y talleres con tabla HTML (punto extra) -->
+      <section class="section" id="eventos">
+        <div class="container">
+          <h2 class="section-title">Concert Dates</h2>
+          <p class="section-subtitle">a May full of pure rock</p>
+
+          <!-- TABLA HTML – punto extra del enunciado -->
+          <!-- thead = cabecera, tbody = cuerpo, tr = fila, th = celda de título, td = celda de dato -->
+          <div class="table-wrapper">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Hour</th>
+                  <th>Day</th>
+                  <th>Venue</th>
+                  <th>State</th>
+                  <th>Tickets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>14:00</td>
+                  <td>May 2</td>
+                  <td>Rose Bowl Stadium</td>
+                  <td>Pasadena, CA</td>
+                  <td><a href="#" class="btn-table">Buy</a></td>
+                </tr>
+                <tr>
+                  <td>15:00</td>
+                  <td>May 6</td>
+                  <td>Allegiant Stadium</td>
+                  <td>Las Vegas, NV</td>
+                  <td><a href="#" class="btn-table">Buy</a></td>
+                </tr>
+                <tr>
+                  <td>16:00</td>
+                  <td>May 10</td>
+                  <td>AT&T Stadium</td>
+                  <td>Arlington, TX</td>
+                  <td><a href="#" class="btn-table">Buy</a></td>
+                </tr>
+                <tr>
+                  <td>17:00</td>
+                  <td>May 13</td>
+                  <td>Mercedes-Benz Stadium</td>
+                  <td>Atlanta, GA</td>
+                  <td><a href="#" class="btn-table">Buy</a></td>
+                </tr>
+                <tr>
+                  <td>19:00</td>
+                  <td>May 17</td>
+                  <td>Hard Rock Stadium</td>
+                  <td>Miami, FL</td>
+                  <td><a href="#" class="btn-table">Buy</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ── FIN HORARIOS ── -->
+
+      <!-- ── SECCIÓN CHEFS (punto extra: sección adicional) ── -->
+      <section class="section section-dark" id="chefs">
+        <div class="container">
+          <h2 class="section-title">The Band</h2>
+          <p class="section-subtitle">
+            The best and most extreme rock band around the world
+          </p>
+
+          <!-- Grid de chefs usando CSS Grid -->
+          <div class="chefs-grid">
+            <article class="chef-card">
+              <!-- Foto simulada con un bloque de color + iniciales -->
+              <div class="chef-photo" style="background-color: #5a3a1a">AS</div>
+              <h3>Axel Steel</h3>
+              <p class="chef-role">The Powerhouse</p>
+              <p>
+                He represents the brute force and technical speed of Thrash and
+                Speed Metal.
+              </p>
+            </article>
+
+            <article class="chef-card">
+              <div class="chef-photo" style="background-color: #3a1a0a">JN</div>
+              <h3>Johnny Napalm</h3>
+              <p class="chef-role">The Anarchist</p>
+              <p>
+                His role is to bring chaos, raw energy, and the "DIY" spirit of
+                the 70s Punk scene.
+              </p>
+            </article>
+
+            <article class="chef-card">
+              <div class="chef-photo" style="background-color: #6b3a2a">JN</div>
+              <h3>Judy Nails</h3>
+              <p class="chef-role">The Riot Grrrl</p>
+              <p>
+                She plays the role of the modern alternative icon, balancing
+                grunge grit with gothic style.
+              </p>
+            </article>
+
+            <article class="chef-card">
+              <div class="chef-photo" style="background-color: #2a1a0a">LÜ</div>
+              <h3>Lars Ümlaüt</h3>
+              <p class="chef-role">The Extreme Warrior</p>
+              <p>
+                He represents the theatrical and dark side of Black and Death
+                Metal.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ── FIN CHEFS ── -->
+
+      <!-- ── SECCIÓN SOBRE EL FESTIVAL ── -->
+      <section class="section" id="sobre">
+        <div class="container sobre-grid">
+          <!-- Columna de texto -->
+          <div class="sobre-texto">
+            <h2 class="section-title left">About the band</h2>
+            <p>
+              <strong>Guitar Hero's</strong> became a global sensation by
+              bringing digital legends to real-life stages. Fronted by Johnny
+              Napalm, the band made history by selling out Wembley Stadium in
+              minutes. They are now icons of stadium rock, famous for their
+              high-energy performances and record-breaking crowd attendance.
+            </p>
+
+            <!-- LISTA SEMÁNTICA – requerida por el enunciado -->
+            <!-- ul = lista desordenada, li = cada elemento de la lista -->
+            <h3 class="list-title">The Band Pact</h3>
+            <ul class="filosofia-lista">
+              <li>Silence: to be a hermetic band with no leaked information</li>
+              <li>
+                Commitment: to be fully present on stage regardless of what's
+                happening below
+              </li>
+              <li>Pride: be proud of achieving your goals</li>
+              <li>
+                Precision: To execute every note and beat with surgical
+                accuracy, honoring the technical mastery that defines the band's
+                legendary sound
+              </li>
+              <li>
+                Legacy: To build a timeless impact that transcends generations,
+                ensuring the music remains a reference for future rock icons
+                long after the tour ends.
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+          <!-- Videos de YouTube -->
+          <div class="video-wrapper">
+            <h3 class="list-title center">In Action</h3>
+            <div class="videos-fila">
+              <!-- Gordon Ramsay - canal oficial, embed siempre activo -->
+              <iframe
+                width="300"
+                height="200"
+                src="https://www.youtube.com/embed/EJoCi2_MnUc?list=RDEJoCi2_MnUc"
+                title="Gordon Ramsay - 5 habilidades de cocina"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <!-- Tasty - canal oficial BuzzFeed, embed siempre activo -->
+              <iframe
+                width="300"
+                height="200"
+                src="https://www.youtube.com/embed/rFN9FQafITw?list=RDrFN9FQafITw"
+                title="Tasty - Recetas gourmet"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <!-- Joshua Weissman - canal grande de cocina, embed activo -->
+              <iframe
+                width="300"
+                height="200"
+                src="https://www.youtube.com/embed/IHh2XcFIiZU?list=RDIHh2XcFIiZU"
+                title="Cocina gourmet en casa"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <!-- Binging with Babish - canal grande, embed activo -->
+              <iframe
+                width="300"
+                height="200"
+                src="https://www.youtube.com/embed/SA0dsv-ClTw?list=RDSA0dsv-ClTw"
+                title="Receta de alta cocina"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+    </main>
+    
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" id="contacto">
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <div class="logo">
+            <span class="logo-main">Guitar🎸</span>
+            <span class="logo-sub">HERO'S</span>
+          </div>
+          <p>Echoes from the Underground</p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📧 info@guitarheros.bd</p>
+          <p>📞 +1 4845850692</p>
+        </div>
+
+        <!-- Columna 3: Redes sociales (tercera lista semántica) -->
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <ul class="redes-lista">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Línea de copyright -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Guitar Hero's Band · Copyright
+        </p>
+      </div>
+    </footer>
+    <!-- ===================== FIN FOOTER ===================== -->
+
+    <!-- Script para el menú hamburguesa en móvil -->
+    <script>
+      // Seleccionamos el botón y el menú por su id
+      var hamburger = document.getElementById("hamburger");
+      var nav = document.getElementById("nav");
+
+      // Cuando el usuario hace clic en el botón hamburguesa...
+      hamburger.addEventListener("click", function () {
+        // ...alternamos la clase 'open' en el menú para mostrarlo u ocultarlo
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
